@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+{% block body%}
+<div>
+  <h4> Delete Book:  </h4>
+  <h1> Are you sure you want to delete {{item.name}}? </h1>
+
+  <form action="#" method = 'post'>
+    <input type='submit', value = 'Delete'>
+  </form>
+  <a href = '{{url_for('showBookList', bookseries_id=bookseries_id)}}'> Cancel </a>
+</div>
+
+{% endblock %}
